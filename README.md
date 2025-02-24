@@ -21,8 +21,8 @@ To run this project, you need:
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/yourusername/yourrepo.git
-cd yourrepo
+git clone https://github.com/Chinmay-ESP/PUB_MicroRos_IDF.git
+cd PUB_MicroRos_IDF
 ```
 
 ### 2. Install ESP-IDF & Micro-ROS
@@ -44,7 +44,7 @@ idf.py flash
 ### 5. Run the Micro-ROS Agent
 On your host machine, start the Micro-ROS Agent:
 ```sh
-ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyUSB0 -b 115200
+docker run -it --rm --ipc host --network host --privileged microros/micro-ros-agent:humble serial -b 115200 --dev /dev/ttyUSB0
 ```
 
 ## How It Works
