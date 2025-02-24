@@ -1,4 +1,4 @@
-# ROS2 Micro-ROS Publisher on ESP32
+# Micro-ROS Publisher on ESP-IDF(ESP32)
 
 This repository contains an implementation of a simple ROS2 Micro-ROS publisher using ESP32. The project publishes an integer counter to the `/count_pub` topic.
 
@@ -70,10 +70,3 @@ data: 1
 data: 2
 ...
 ```
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
-## Author
-[Your Name](https://github.com/yourusername)
-
